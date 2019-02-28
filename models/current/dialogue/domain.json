@@ -1,0 +1,28 @@
+{
+  "states": [
+    "intent_deny",
+    "intent_goodbye",
+    "intent_greet",
+    "intent_joke",
+    "intent_name",
+    "intent_order_product",
+    "intent_thanks",
+    "entity_name",
+    "entity_product",
+    "entity_model",
+    "slot_model_0",
+    "slot_name_0",
+    "slot_product_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_utter_name",
+    "prev_utter_thanks",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_ask_product_name",
+    "prev_utter_ask_model_name",
+    "prev_action_joke",
+    "prev_action_order_product"
+  ]
+}

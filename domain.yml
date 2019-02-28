@@ -1,0 +1,50 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+- order_product
+
+entities:
+- name
+- product
+- model
+
+slots:
+  name:
+    type: text
+  product:
+    type: text
+  model:
+    type: text
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_ask_product_name
+- utter_ask_model_name
+- action_joke
+- action_order_product
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_ask_product_name:
+  - 'Which product?'
+
+  utter_ask_model_name:
+  - 'Which model of {product}?'
