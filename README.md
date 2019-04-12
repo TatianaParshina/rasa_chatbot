@@ -44,7 +44,7 @@ pipeline: spacy_sklearn
 ## How to use this project?
 1. You can train the Rasa NLU model by running:  
 ```
-python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.json -o models --fixed_model_name nlu --project current --verbose
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
 ```  
 This will train the Rasa NLU model and store it inside the `/models/current/nlu` folder of your project directory.
 
@@ -65,3 +65,21 @@ This will start the server for emulating the custom action.
 python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
 ```  
 This will load the assistant in your terminal for you to chat.
+
+
+## Conversation Examples
+### Example 1 of conversation
+```
+User: Hi bot
+Bot: Hey There! Tell me your name!
+User: My name is Tatiana
+Bot: Nice to meet you Tatiana. How can I help?
+User: I want to buy a laptop
+Bot: Which brand of laptop fo you want to buy?
+User: I have identified MacBook
+Bot: Order was placed for MacBook laptop
+User: Thank you so much
+Bot: My pleasure
+User: Bye bot
+Bot: Have a nice day Tatiana!
+```

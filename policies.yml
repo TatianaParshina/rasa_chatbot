@@ -1,0 +1,13 @@
+policies:
+  - name: KerasPolicy
+    epochs: 100
+    max_history: 5
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: FormPolicy
+  - name: TwoStageFallbackPolicy
+    nlu_threshold: 0.3
+    core_threshold: 0.3
+    fallback_core_action_name: "action_default_fallback"
+    fallback_nlu_action_name: "action_default_fallback"
+    deny_suggestion_intent_name: "out_of_scope"

@@ -6,6 +6,8 @@ intents:
 - joke
 - name
 - order_product
+- order_model
+- out_of_scope
 
 entities:
 - name
@@ -27,8 +29,9 @@ actions:
 - utter_goodbye
 - utter_ask_product_name
 - utter_ask_model_name
+- utter_place_order
 - action_joke
-- action_order_product
+- utter_out_of_scope
 
 templates:
   utter_name:
@@ -38,13 +41,19 @@ templates:
   - text: "Nice to you meet you {name}. How can I help?"
 
   utter_goodbye:
-  - text: "Talk to you later!"
+  - text: "Have a nice day {name}!"
   
   utter_thanks:
   - text: "My pleasure."
 
-  utter_ask_product_name:
-  - 'Which product?'
-
   utter_ask_model_name:
-  - 'Which model of {product}?'
+  - 'Which brand of {product} do you want to buy?'
+
+  utter_place_order:
+  - 'Order was placed for {model} {product}'
+
+  utter_out_of_scope:
+    - text: "Sorry, I can’t deal with that request."
+    - text: "I'm sorry, I can't handle that request."
+    - text: "I can't help you with that, I'm sorry."
+    - text: "Even a Rasa bot is not completely perfect - it seems like I can't handle that request."  
