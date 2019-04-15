@@ -62,8 +62,14 @@ This will start the server for emulating the custom action.
 
 4. Test the assistant by running:  
 ```
-python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml --credentials credentials.yml
 ```  
+```
+python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --credentials credentials.yml
+```
+```
+ngrok http 5005
+```
 This will load the assistant in your terminal for you to chat.
 
 
