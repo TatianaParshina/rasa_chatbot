@@ -2,7 +2,7 @@ language: "en"
 
 pipeline:
 - name: "nlp_spacy"
-- name: "spacy_tokenizer_lemma.SpacyTokenizer"
+- name: "tokenizers.spacy_tokenizer_lemma.SpacyTokenizer"
 - name: "intent_entity_featurizer_regex"
 - name: "intent_featurizer_spacy"
 - name: "ner_crf"
